@@ -1,24 +1,61 @@
 .navbar-brand{
     padding: 1%;
 }
-
 .header{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-weight: bold ;
     background-color: #FFC55A;
 }
-
 .header:hover ~ .bottom { 
-    transition: 0.3s;
+    transition: 2s;
     height: 1vh;
     width: 100vw;
-    background-color: #00215E;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,151,255,1) 100%);
+
+    /* background-color: #00215E; */
 }
-
-
-
 .bottom{
 
     height: 1vh;
     width: 100vw;
-    background-color: #FC4100;
+    background: rgb(36,30,0);
+    background: linear-gradient(90deg, rgba(36,30,0,1) 0%, rgba(252,65,0,1) 0%, rgba(255,197,90,1) 100%);
+}
 
+
+body{
+    background-color: #4F6F52;
+}
+
+.perso{
+    display: flex;
+    justify-content: space-around;
+}
+
+#box{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vw;
+}
+.three{
+flex-wrap: wrap;
+}
+.victory{
+    background-color: #4171d6;
+}
+.defeat{
+    background-color: #e84057;
+}
+.name{
+    font-weight: 500;
+    padding: 5%;
+}
+.score{
+    font-weight: 500;
+    margin: 5%;
 }
