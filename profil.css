@@ -1,0 +1,24 @@
+.navbar-brand{
+    padding: 1%;
+}
+
+.header{
+    background-color: #FFC55A;
+}
+
+.header:hover ~ .bottom { 
+    transition: 0.3s;
+    height: 1vh;
+    width: 100vw;
+    background-color: #00215E;
+}
+
+
+
+.bottom{
+
+    height: 1vh;
+    width: 100vw;
+    background-color: #FC4100;
+
+}
