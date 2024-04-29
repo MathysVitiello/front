@@ -9,7 +9,7 @@ const dataSet1 = [
 
 const dataSetTournament = [
     ['2', '3'],
-    ['1', '10'],
+    ['1', '3'],
     ['6', '6'],
     ['3', '4'],
     ['4', '10'],
@@ -17,7 +17,7 @@ const dataSetTournament = [
 ];
 
 const winrate = [
-    ['7', '6'],
+    ['7', '15'],
 ];
 
 // find winrate (camembert chart) first number in wins
@@ -27,9 +27,6 @@ let multiplier = (100 / totalGames );
 win = 3.6 * (Number(winrate[0][0]) * multiplier);
 lose = 3.6 * (Number(winrate[0][1]) * multiplier);
 
-
-console.log( win );
-console.log( lose );
 
 var root = document.querySelector(':root');
 var rootStyles = getComputedStyle(root);
@@ -115,3 +112,11 @@ for(var i = 0; i < dataSetTournament.length; i++) {
     // console.log(box);
     document.getElementById("two").appendChild(box);
 }
+
+
+
+// ici le text du camembert
+const div = document.getElementById('result');
+const p = document.createElement('p');
+p.textContent = winrate[0][0] + ' W - ' + winrate[0][1] + ' L';
+div.appendChild(p);
